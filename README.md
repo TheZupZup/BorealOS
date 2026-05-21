@@ -4,6 +4,12 @@ BorealOS is a privacy-first Android-based mobile operating system focused on sim
 
 The project targets Linux, FOSS, and self-hosted users who want a clean mobile experience without unnecessary bloat or forced cloud integrations.
 
+## Documentation
+
+For a structured introduction to the project — design principles, technical
+direction, planned repository layout, and roadmap — see the
+[Project Overview](docs/OVERVIEW.md).
+
 ## Goals
 
 - Fast and transparent updates
