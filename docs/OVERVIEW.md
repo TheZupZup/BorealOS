@@ -126,7 +126,7 @@ first target is stable.
 This repository will grow to hold the planning, research, and build assets for
 BorealOS. The intended top-level layout:
 
-```
+```text
 BorealOS/
 ├── README.md            # Short project introduction
 ├── docs/                # Project documentation (this overview, guides, notes)
