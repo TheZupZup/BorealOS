@@ -1,0 +1,14 @@
+{
+  // markdownlint-cli2 configuration for BorealOS documentation.
+  // https://github.com/DavidAnson/markdownlint-cli2
+  "config": {
+    "default": true,
+    // Line length is not enforced: prose and tables wrap naturally, and this
+    // rule mostly adds noise for a documentation-first project.
+    "MD013": false,
+    // Table pipe/padding spacing is cosmetic; don't block doc contributors.
+    "MD060": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules"]
+}
