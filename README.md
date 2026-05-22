@@ -12,6 +12,22 @@ For a structured introduction to the project — design principles, technical
 direction, planned repository layout, and roadmap — see the
 [Project Overview](docs/OVERVIEW.md).
 
+As the project prepares for future build work, additional research and
+contributor onboarding notes are available:
+
+- [Build Environment](docs/BUILD_ENVIRONMENT.md) — recommended Linux
+  distributions, hardware and filesystem expectations, Java/OpenJDK notes, and
+  a packages overview for future Android build work.
+- [LineageOS Setup Notes](docs/LINEAGEOS_SETUP.md) — how `repo init` and
+  `repo sync` work, what a workspace looks like, and why BorealOS builds on
+  LineageOS/AOSP.
+- [Android Build Notes](docs/ANDROID_BUILD_NOTES.md) — a glossary of Android
+  build terminology (device trees, vendor blobs, kernels, OTA, signing,
+  fastboot/ADB) and common beginner confusion points.
+
+These documents are preparatory. BorealOS is not buildable yet; see
+[Current Status](#current-status).
+
 ## Goals
 
 - Fast and transparent updates
