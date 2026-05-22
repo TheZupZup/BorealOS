@@ -63,6 +63,14 @@ BorealOS aims to make mobile devices feel more open, understandable, and user-co
 
 Documentation and early planning contributions are welcome while the project architecture is being defined.
 
+## Issues and triage
+
+Found a bug, have an idea, or want to help with research or docs? Open an issue
+using one of the [issue templates](.github/ISSUE_TEMPLATE). To keep things easy
+to triage as the project grows, maintainers use a small, consistent label set —
+see the [labels guide](docs/LABELS.md) for what each label means and when it is
+used.
+
 ## Early tooling
 
 Before any device flashing or Android build work begins, the repository ships a

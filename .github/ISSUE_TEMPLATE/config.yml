@@ -1,0 +1,12 @@
+# Issue template chooser configuration for the BorealOS new-issue page.
+blank_issues_enabled: true
+contact_links:
+  - name: Project overview and roadmap
+    url: https://github.com/TheZupZup/BorealOS/blob/main/docs/OVERVIEW.md
+    about: New here? Start with the overview to understand the goals, status, and roadmap.
+  - name: Browse the documentation
+    url: https://github.com/TheZupZup/BorealOS/tree/main/docs
+    about: Read the build environment, LineageOS setup, and Android build notes.
+  - name: How to contribute
+    url: https://github.com/TheZupZup/BorealOS/blob/main/docs/OVERVIEW.md#how-to-contribute
+    about: See where early contributions are most useful while the project takes shape.
