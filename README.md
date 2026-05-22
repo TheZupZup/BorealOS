@@ -47,6 +47,41 @@ BorealOS aims to make mobile devices feel more open, understandable, and user-co
 
 Documentation and early planning contributions are welcome while the project architecture is being defined.
 
+## Early tooling
+
+Before any device flashing or Android build work begins, the repository ships a
+few small, safe helper scripts that prepare a future LineageOS/AOSP workflow.
+**None of them build BorealOS or flash a device** — that work does not exist
+yet. The build-related scripts default to a dry run and only print what they
+would do unless you pass `--run`.
+
+- [`scripts/borealos-doctor.sh`](scripts/borealos-doctor.sh) — a read-only check
+  for basic tools (`git`, `repo`, `python3`, `java`, `make`, `gcc`, `curl`,
+  `unzip`). It never modifies your system.
+- [`scripts/init-lineageos-workspace.sh`](scripts/init-lineageos-workspace.sh)
+  — documents and, with `--run`, prepares a workspace and the intended
+  `repo init` flow. A later sync can download **tens of gigabytes**.
+- [`scripts/sync-lineageos.sh`](scripts/sync-lineageos.sh) — runs `repo sync`
+  (with `--run`) only inside an already-initialized workspace.
+
+Editable defaults — workspace path, target device (`husky`), and a LineageOS
+branch placeholder — live in
+[`config/borealos.env.example`](config/borealos.env.example). Copy it and adjust
+the values:
+
+```bash
+cp config/borealos.env.example config/borealos.env
+```
+
+A good first step is the environment check:
+
+```bash
+./scripts/borealos-doctor.sh
+```
+
+Manifests are not vendored in this repository; see
+[`manifests/README.md`](manifests/README.md) for details.
+
 ## Continuous integration
 
 While BorealOS is documentation- and research-first, CI keeps the docs healthy
