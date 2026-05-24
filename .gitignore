@@ -5,3 +5,11 @@
 # A locally initialized LineageOS/AOSP workspace should never be committed; the
 # full Android source tree is fetched on demand, not vendored here.
 /borealos-lineageos/
+
+# Python build and cache artifacts from the BorealOS CLI under tools/.
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/

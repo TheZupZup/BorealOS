@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "borealos-cli"
+version = "0.1.0"
+description = "Small, safe, read-only command-line helpers for early BorealOS tooling."
+readme = "docs/CLI.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "BorealOS contributors" }]
+keywords = ["borealos", "lineageos", "android", "tooling"]
+# No external runtime dependencies: the CLI uses only the Python standard
+# library so it stays trivial to run and review.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/TheZupZup/BorealOS"
+Repository = "https://github.com/TheZupZup/BorealOS"
+
+[project.scripts]
+borealos = "borealos_cli.cli:main"
+
+[tool.setuptools]
+# The CLI package lives under tools/ rather than at the repository root.
+package-dir = { "" = "tools" }
+
+[tool.setuptools.packages.find]
+where = ["tools"]
+include = ["borealos_cli*"]
