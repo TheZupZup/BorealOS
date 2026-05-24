@@ -103,6 +103,11 @@ A good first step is the environment check:
 ./scripts/borealos-doctor.sh
 ```
 
+A small, dependency-free project CLI is also taking shape alongside these
+scripts. It provides safe, read-only commands (`borealos doctor`,
+`borealos config`, `borealos workspace status`) and does not replace the
+scripts, which remain supported. See the [CLI guide](docs/CLI.md).
+
 Manifests are not vendored in this repository; see
 [`manifests/README.md`](manifests/README.md) for details.
 
