@@ -24,7 +24,7 @@ Each profile is filled in by its own PR:
 
 - [ ] Non-interactive mode (for example `--profiles gaming,laptop`) for scripted runs
 - [ ] Dry-run mode that shows what would change without changing it
-- [ ] Explicit Debian version check (warn when not on Debian 13/trixie)
+- [x] Explicit Debian version check (warn when not on Debian 13/trixie)
 - [ ] Write a run log to a file for easier troubleshooting
 - [ ] CI that runs `scripts/check.sh` on every PR
 
