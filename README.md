@@ -17,17 +17,17 @@ steps while staying as close to stock Debian as possible.
 ## Status: early scaffold
 
 The project structure, interactive menu and helper libraries are in place. The
-profiles themselves are still placeholders: they print what they will eventually do
-and change nothing. Real profile contents land in small, focused PRs — see
-[docs/roadmap.md](docs/roadmap.md).
+laptop profile is the first one with real contents; the other profiles are still
+placeholders that print what they will eventually do and change nothing. Real
+profile contents land in small, focused PRs — see [docs/roadmap.md](docs/roadmap.md).
 
 ## Profiles
 
-| Profile     | What it will cover                                        |
+| Profile     | What it covers                                            |
 | ----------- | --------------------------------------------------------- |
 | `gaming`    | Steam, GameMode, MangoHud (planned)                        |
 | `developer` | Build tools, git tooling, container runtimes (planned)     |
-| `laptop`    | Power management and battery-friendly defaults (planned)   |
+| `laptop`    | Laptop power management and sensor tools                   |
 | `privacy`   | Firewall and privacy-friendly desktop defaults (planned)   |
 
 ## Requirements
