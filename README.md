@@ -36,6 +36,11 @@ and change nothing. Real profile contents land in small, focused PRs — see
 - A user account with `sudo` access
 - `git` to clone the repository (`sudo apt install git`)
 
+Boreal Setup validates at startup that it is running on Debian 13 (trixie). On any
+other system — a different Debian release, a non-Debian distribution, or a system
+it cannot identify — it warns clearly and asks whether to continue; declining exits
+without changing anything.
+
 ## Getting started
 
 There is intentionally no `curl | bash` one-liner. Clone the repository and read the

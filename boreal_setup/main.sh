@@ -52,12 +52,16 @@ BANNER
 }
 
 ensure_supported_system() {
-  local os_id
-  os_id="$(detect_os_id)"
-  if [[ "${os_id}" == "debian" ]]; then
+  if is_debian_trixie; then
+    log_info "Detected Debian 13 (trixie)."
     return 0
   fi
-  log_warn "Boreal Setup targets Debian 13 (trixie), but this system reports: ${os_id}"
+  if [[ "$(detect_os_id)" == "unknown" ]]; then
+    log_warn "Boreal Setup could not detect the operating system."
+  else
+    log_warn "Boreal Setup targets Debian 13 (trixie), but this system appears to be $(describe_detected_os)."
+  fi
+  log_warn "Continuing on an unsupported system may not work as intended."
   if ! prompt_confirm "Continue anyway?"; then
     log_info "Aborted — nothing was changed."
     exit 0
