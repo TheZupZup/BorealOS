@@ -17,7 +17,9 @@ Each profile is filled in by its own PR:
 
 - [ ] `gaming`: Steam (with multiarch), GameMode, MangoHud
 - [ ] `developer`: build-essential, git tooling, container runtime
-- [ ] `laptop`: power management (TLP or power-profiles-daemon), firmware updates
+- [x] `laptop`: power management (power-profiles-daemon), sensor tools, fwupd
+- [ ] `laptop` follow-up: Wi-Fi/Bluetooth firmware packages — needs
+      non-free-firmware handling in the APT sources
 - [ ] `privacy`: firewall defaults (ufw), privacy-friendly desktop defaults
 
 ## Phase 2 — Quality of life
